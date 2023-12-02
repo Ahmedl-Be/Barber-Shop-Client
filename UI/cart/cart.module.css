@@ -1,0 +1,44 @@
+.container{
+    margin-bottom: 1.5rem;
+    background-color: rgba(0,0,0,0.04);
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    border-radius: 10px;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title{
+    font-size: x-large;
+}
+.price{
+    font-size: larger;
+    font-weight: 700;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 500px) {
+    .container{
+        margin-bottom: 1.1rem;
+        gap: 1rem;
+    }
+    .head{
+        display: block;
+
+    }
+    .title{
+        font-size: larger;
+    }
+
+}

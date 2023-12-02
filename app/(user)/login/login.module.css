@@ -1,0 +1,41 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 25vw;
+    margin: 25px;
+}
+
+.mainSec{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    width: auto;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.btn{
+    background-color: #d3bb8c;
+    padding: 0.4rem 1.3rem ;
+    width: auto;
+}
+
+.btn:hover{
+    background-color: #ceb98b;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .form{
+        width: auto;
+    }
+    .btn{
+        width: auto;
+        padding: 0.4rem 4rem ;
+    }
+    
+}

@@ -1,0 +1,110 @@
+.timeGrid {
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    gap: 1.2rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 25vw;
+    margin: 25px;
+}
+
+.mainSec{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    width: auto;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.btn{
+    background-color: #d3bb8c;
+    padding: 0.4rem 1.3rem ;
+    width: auto;
+}
+
+.btn:hover{
+    background-color: #ceb98b;
+}
+
+.packageHeader{
+    font-size: x-large;
+    margin-bottom: 1.4rem;
+}
+
+.packageItems{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 1.2rem;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.singlePackage{
+    border: 1px solid gray;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    height: fit-content;
+}
+
+.singlePackageHeader{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.2rem;
+}
+
+.packageDeleteBtn{
+    background-color: black;
+    color: white;
+    padding: 0.2rem;
+    margin-top: 0.6rem;
+    width: 100%;
+}
+
+.packagePrice{
+    font-size: larger;
+}
+
+.emptyPackage{
+    margin-bottom: 1.2rem;
+    font-size: x-large;
+    color: #ceb98b;
+}
+
+.availableHours{
+    background-color: black;
+    color: white;
+    padding: 0.8rem 1.8rem;
+    border-radius: 0.3rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .form{
+        width: auto;
+    }
+    .btn{
+        width: auto;
+        padding: 0.4rem 4rem ;
+    }
+    .packageItems{
+        grid-template-columns: auto;
+        gap: 1rem;
+    }
+    .availableHours{
+        padding: 0.8rem 1rem;
+        text-align: center;
+    }
+    .timeGrid {
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        gap: 0.8rem;
+    }
+    
+}
