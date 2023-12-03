@@ -25,7 +25,7 @@ const CalendarComponent = () => {
     useEffect(() => {
         const fetchAvailableHours = async () => {
             try {
-                const response =  axios.get(`http://localhost:8800/api/reservation/available-hours/${formattedDate}`)
+                const response =  axios.get(`https://barber-shop-0w9x.onrender.com/api/reservation/available-hours/${formattedDate}`)
                 response.then(result => {
                     setAvailableHours(result.data.data.availableHours)
                 })

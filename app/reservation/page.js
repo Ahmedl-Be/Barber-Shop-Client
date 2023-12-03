@@ -34,7 +34,7 @@ const reservation = () => {
                     return;
                 }
                 const headers = { Authorization: `Bearer ${user}` };
-                const response = await axios.get('http://localhost:8800/api/users/services', { headers });
+                const response = await axios.get('https://barber-shop-0w9x.onrender.com/api/users/services', { headers });
                 setServices(response.data);
                 setIsLoading(false);
             } catch (error) {

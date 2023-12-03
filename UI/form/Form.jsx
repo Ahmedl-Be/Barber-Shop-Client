@@ -30,7 +30,7 @@ const Form = () => {
         e.preventDefault();
         setOverlayActive(true)
         try {
-                await axios.post('http://localhost:8800/api/userMsg',formData)
+                await axios.post('https://barber-shop-0w9x.onrender.com/api/userMsg',formData)
                 .then(function (response) {
                     console.log(response);
                     setResHandel("Your Message has been Received");

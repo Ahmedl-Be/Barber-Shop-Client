@@ -32,7 +32,7 @@ const CalendarFrom = ({ formattedDate, selectedHour }) => {
         e.preventDefault();
         setOverlayActive(true)
         try {
-            await axios.post('http://localhost:8800/api/reservation/book', {
+            await axios.post('https://barber-shop-0w9x.onrender.com/api/reservation/book', {
                 date: formattedDate,
                 hour,
                 bookedBy: fullName,

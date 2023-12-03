@@ -20,7 +20,7 @@ const register = () => {
         e.preventDefault();
         setOverlayActive(true)
         try {
-            await axios.post('http://localhost:8800/api/users/register',{
+            await axios.post('https://barber-shop-0w9x.onrender.com/api/users/register',{
                 firstName,
                 lastName,
                 email,
