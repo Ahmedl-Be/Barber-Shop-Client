@@ -51,19 +51,23 @@ const reservation = () => {
     }, [router]);
 
     return (!isLoading ?
-        (<div className='mt-[15vh] mx-[10%] h-auto'>
-            <div className='flex justify-between gap-3 bg-gray-200 p-4 rounded'>
+        (<div className='mt-[15vh] mx-[5%] lg:mx-[12%] h-auto'>
+            <div className='flex justify-between bg-gray-200 p-4 
+            rounded'>
                 <div className='flex gap-3'>
-                    <button onClick={() => setNavValue("Services")}>Services</button>
-                    <button onClick={() => setNavValue("Book Now")}>
-                        Book Now
+                    <button onClick={() => setNavValue("Services")}>
+                        Services
                     </button>
-                    <div className='relative cursor-pointer '>
+                    <button onClick={() => setNavValue("Book Now")}
+                    className='flex gap-1'>
+                        Book Now 
+                        <div className='relative cursor-pointer '>
                         <ShoppingCartIcon />
                         <h1 className='absolute bottom-3 left-6'>
                             {items.length}
                         </h1>
                     </div>
+                    </button>
                 </div>
                 <button onClick={handelLogout} className='text-bold'>LOGOUT</button>
             </div>
