@@ -17,6 +17,7 @@ const register = () => {
 
 
     const submitHandler = async (e) => {
+        SetResMessage("loading...")
         e.preventDefault();
         setOverlayActive(true)
         try {
@@ -40,7 +41,7 @@ const register = () => {
         } finally {
             setTimeout(() => {
                 setOverlayActive(false);
-            }, 700);
+            }, 1000);
         }
     }
 

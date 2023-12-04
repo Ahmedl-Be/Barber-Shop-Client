@@ -25,6 +25,7 @@ const login = () => {
 
     const submitHandler = async (e) => {
         e.preventDefault();
+        SetresMessage("loading...")
         setOverlayActive(true)
         try {
             const response = await axios.post('https://barber-shop-0w9x.onrender.com/api/users/login', 
@@ -46,7 +47,7 @@ const login = () => {
         } finally {
             setTimeout(() => {
                 setOverlayActive(false);
-            }, 700);
+            }, 1000);
         }
     }
 

@@ -30,6 +30,7 @@ const CalendarFrom = ({ formattedDate, selectedHour }) => {
 
     const submitHandler = async (e) => {
         e.preventDefault();
+        SetResMessage("loading...")
         setOverlayActive(true)
         try {
             await axios.post('https://barber-shop-0w9x.onrender.com/api/reservation/book', {

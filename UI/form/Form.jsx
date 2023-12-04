@@ -28,6 +28,7 @@ const Form = () => {
 
     const submitHandler = async (e) => {
         e.preventDefault();
+        setResHandel("loading...")
         setOverlayActive(true)
         try {
                 await axios.post('https://barber-shop-0w9x.onrender.com/api/userMsg',formData)
