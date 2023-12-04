@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Barber Shop Frontend
 
+### Introduction
+This is a web application for a Barber Shop built using Next.js, Tailwind CSS, MUI, and Context API. The application enables users to browse services, add them to the cart, remove items from the cart, login, register, send messages to the owner, and book reservations. It's designed to offer a responsive and seamless experience across various devices.
+
+### Features
+- **Browse Services**: Users can explore the services available on the website.
+- **Add to Cart**: Select services and add them to the cart for booking.
+- **Remove from Cart**: Ability to remove services from the cart.
+- **Login and Register**: Users can register and log in to the application.
+- **Context API State Management**: Utilizes Context API for managing the application's state.
+- **Book a Reservation**: Users can book reservations for specific days and hours.
+- **Responsive Design**: The application adapts to different screen sizes for a consistent user experience on desktops, tablets, and mobile devices.
 ## Getting Started
 
-First, run the development server:
+To get started with the project, follow the instructions below:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository:
+   ```
+   git clone [https://github.com/Ahmedl-Be/Barber-Shop-Client.git]
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Navigate to the project directory:
+   `````
+   cd Barber Shop
+   ```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. Install the dependencies:
+   ````
+   npm install
+   ````
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. Start the development server:
+   ````
+   npm run dev
+   ````
 
-## Learn More
+6. Open your web browser and visit `http://localhost:3000` to access the application.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Technologies Used
+- Next.js: A React framework for building server-side rendered and static websites.
+- Module CSS: A CSS module system for modular and scoped CSS styles.
+- Material-UI: A set of React components that implement Google's Material Design.
+- Tailwind CSS: A utility-first CSS framework for quickly building responsive user interfaces.
+- Axios: A library for making HTTP requests from the browser.
+- keen-slider: keen Slider is a versatile, lightweight (less than 30KB gzipped), and customizable slider library for web applications
+- react-calendar : react-calendar is a popular library that provides a customizable and easy-to-use calendar component for React applications.- react-calendar
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Deployment
+The deployed version of the project can be accessed at: [Barber Shop - Deployed Version](https://barber-shop-inky-theta.vercel.app/)
