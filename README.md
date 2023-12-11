@@ -1,5 +1,3 @@
-## Barber Shop Frontend
-
 ## Introduction
 This is a web application for a Barber Shop built using Next.js, Tailwind CSS, MUI, and Context API. The application enables users to browse services, add them to the cart, remove items from the cart, login, register, send messages to the owner, and book reservations. It's designed to offer a responsive and seamless experience across various devices.
 
