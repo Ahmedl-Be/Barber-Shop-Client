@@ -67,6 +67,7 @@ export default function CustomizedAccordions({ services }) {
             items[category] = itemsInCategory;
         });
         setItemsByCategory(items);
+        // console.log("accordion log")
     }, [services]);
 
 

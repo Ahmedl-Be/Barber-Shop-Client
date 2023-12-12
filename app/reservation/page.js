@@ -37,6 +37,7 @@ const reservation = () => {
                 const response = await axios.get('https://barber-shop-0w9x.onrender.com/api/users/services', { headers });
                 setServices(response.data);
                 setIsLoading(false);
+                console.log("Loooggggogog")
             } catch (error) {
                 console.error(error);
                 if (error) {
@@ -59,21 +60,21 @@ const reservation = () => {
                         Services
                     </button>
                     <button onClick={() => setNavValue("Book Now")}
-                    className='flex gap-1'>
-                        Book Now 
+                        className='flex gap-1'>
+                        Book Now
                         <div className='relative cursor-pointer '>
-                        <ShoppingCartIcon />
-                        <h1 className='absolute bottom-3 left-6'>
-                            {items.length}
-                        </h1>
-                    </div>
+                            <ShoppingCartIcon />
+                            <h1 className='absolute bottom-3 left-6'>
+                                {items.length}
+                            </h1>
+                        </div>
                     </button>
                 </div>
                 <button onClick={handelLogout} className='text-bold'>LOGOUT</button>
             </div>
             <h1 className='my-5 text-3xl'>{navValue}</h1>
-                {navValue == "Services" && <Accordion services={services} />}
-                {navValue == "Book Now" && <CalendarComponent />}
+            {navValue == "Services" && <Accordion services={services} />}
+            {navValue == "Book Now" && <CalendarComponent />}
         </div>) :
         <h1 className='absolute top-1/2 left-1/2 transform -translate-x-1/2
         -translate-y-1/2'>

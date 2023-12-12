@@ -34,7 +34,7 @@ const Form = () => {
                 await axios.post('https://barber-shop-0w9x.onrender.com/api/userMsg',formData)
                 .then(function (response) {
                     console.log(response);
-                    setResHandel("Your Message has been Received");
+                    setResHandel("Success");
                     resetForm();
                 })
         } catch (error) {
